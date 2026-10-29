@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Detail</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#303030;font-family:Arial,Helvetica,sans-serif}
+.page{width:calc(100% - 28px);max-width:1200px;margin:27px auto 24px}
+.brand{padding:0 0 18px;border-bottom:2px solid #303030;margin-bottom:18px}
+.brand-name{font-size:30px;font-weight:800;letter-spacing:2px;color:#303030}
+table{border-collapse:collapse;width:100%;table-layout:fixed}
+.student{border:1px solid #dedede}
+.student td,.student th{border:1px solid #dedede;text-align:left;vertical-align:top;padding:17px 16px;font-size:20px;line-height:1.55;font-weight:400}
+.student .heading{font-size:30px;font-weight:700;padding:13px 16px 20px;height:80px}
+.student .label{font-weight:700;width:18.5%}
+.student .value{width:58.5%}
+.student .photo-cell{width:23%;padding:16px;text-align:center}
+.student .photo-cell img{width:100%;max-width:185px;height:auto;display:block;margin:0 auto}
+.student .photo-cell{border-bottom:0}
+.student .photo-spacer{height:0;padding:0;border-top:0;border-bottom:1px solid #dedede}
+.marks-wrap{margin:70px 20px 0}
+.marks th,.marks td{border:1px solid #dedede;text-align:center;padding:17px 12px}
+.marks th{font-size:20px;background:#f6f7f8;font-weight:700}
+.marks td{font-size:24px;font-weight:700}
+.search{margin:0 auto 22px;padding:16px;border:1px solid #e0e0e0;background:#fafafa;display:flex;gap:10px;align-items:end;flex-wrap:wrap}
+.search label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}
+.search input{padding:10px 12px;border:1px solid #ccc;font-size:15px;min-width:220px}
+.search button{padding:11px 17px;background:#333;color:#fff;border:0;cursor:pointer;font-size:14px}
+.message{display:none;margin:0 0 18px;padding:10px 12px;background:#fff3f3;color:#8c2222;border:1px solid #e7bcbc}
+@media(max-width:700px){
+.page{width:calc(100% - 16px);margin:12px auto}
+.brand-name{font-size:25px}
+.student td,.student th{font-size:14px;padding:9px 7px;line-height:1.4}
+.student .heading{font-size:22px;height:auto;padding:12px 8px}
+.student .label{width:25%}.student .value{width:52%}.student .photo-cell{width:23%;padding:7px}
+.student .photo-cell img{max-width:120px}
+.marks-wrap{margin:30px 0 0}.marks th{font-size:13px}.marks td{font-size:17px}.marks th,.marks td{padding:11px 5px}
+.search input{min-width:0;width:100%}.search>div{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand"><div class="brand-name">PMSKILL</div></div>
+  <div id="record">
+    <table class="student" aria-label="Student detail">
+      <colgroup><col style="width:18.5%"><col style="width:58.5%"><col style="width:23%"></colgroup>
+      <tr><th colspan="3" class="heading">Student Detail:</th></tr>
+      <tr>
+        <td class="label">Unique ID No. :</td><td class="value">PSDC/BEMS/2B-070</td>
+        <td class="photo-cell" rowspan="6"><img src="student-photo.jpg" alt="Student portrait"></td>
+      </tr>
+      <tr><td class="label">Registration<br>No:</td><td class="value">REGCE/20257076</td></tr>
+      <tr><td class="label">Student Name:</td><td class="value">BALU YADAV JADHAV</td></tr>
+      <tr><td class="label">Father Name:</td><td class="value">YADAV JADHAV</td></tr>
+      <tr><td class="label">State:</td><td class="value">Maharashtra</td></tr>
+      <tr><td class="label">District:</td><td class="value">Aurangabad</td></tr>
+      <tr><td class="label">City:</td><td class="value">Shivar</td><td rowspan="5" style="border:1px solid #dedede"></td></tr>
+      <tr><td class="label">Course:</td><td class="value">Bachelor of Electro-homeopathy Medicine and<br>Surgery(BEMS)</td></tr>
+      <tr><td class="label">Batch Name:</td><td class="value">2021-25</td></tr>
+      <tr><td class="label">Branch Name:</td><td class="value">INDIAN INSTITUTE OF HEALTH CARE, JAIPUR (RAJ.)<br>(PSDTC001011)</td></tr>
+      <tr><td class="label">Status :</td><td class="value">Confirmed</td></tr>
+    </table>
+    <div class="marks-wrap">
+      <table class="marks" aria-label="Marks">
+        <thead><tr><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr></thead>
+        <tbody><tr><td>4000</td><td>2911</td><td>72%</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
